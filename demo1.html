@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Footer</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        .footer {
+            background-color: #333;
+            color: white;
+            padding: 20px 10px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+            text-align: center;
+        }
+
+        .footer-section {
+            flex: 1 1 200px;
+            margin: 10px;
+        }
+
+        .footer-section img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .footer-section h3 {
+            margin-bottom: 10px;
+        }
+
+        .footer-section ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .footer-section ul li {
+            margin: 5px 0;
+        }
+
+        .footer-section ul li a {
+            color: white;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        .footer-section ul li a:hover {
+            color: #00bcd4;
+        }
+
+        .social-icons {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            margin: 10px 0;
+        }
+
+        .social-icons img {
+            width: 40px;
+            height: 40px;
+            transition: transform 0.3s;
+        }
+
+        .social-icons img:hover {
+            transform: scale(1.1);
+        }
+
+        .copyright {
+            width: 100%;
+            margin-top: 20px;
+            color: #bbb;
+            font-size: 0.9rem;
+        }
+
+        @media (max-width: 600px) {
+            .footer {
+                flex-direction: column;
+            }
+
+            .footer-section {
+                flex: 1 1 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <footer class="footer">
+        <div class="footer-section">
+            <img src="logo.png" alt="Century Health Care Centre Logo">
+            <div class="social-icons">
+                <img src="facebook-icon.png" alt="Facebook">
+                <img src="twitter-icon.png" alt="Twitter">
+                <img src="instagram-icon.png" alt="Instagram">
+                <img src="linkedin-icon.png" alt="LinkedIn">
+            </div>
+        </div>
+        <div class="footer-section">
+            <h3>Quick Links</h3>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+            </ul>
+        </div>
+        <div class="footer-section">
+            <h3>Quick Contact</h3>
+            <ul>
+                <li>Email: contact@centuryhealth.com</li>
+                <li>Phone: +1 (123) 456-7890</li>
+                <li>Address: 123 Health Street, Wellness City</li>
+            </ul>
+        </div>
+        <div class="copyright">
+            Copyright © 2025 Century Health Care Centre. All Rights Reserved.
+        </div>
+    </footer>
+</body>
+</html>
